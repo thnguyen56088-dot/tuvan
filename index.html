@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuyển sinh đại học 2026</title>
+
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f4f6f9;
+}
+
+/* ===== TOPBAR ===== */
+.topbar {
+  background:#1976d2;
+  color:white;
+  padding:14px;
+  font-size:20px;
+  font-weight:bold;
+  display:flex;
+  align-items:center;
+}
+
+.menu-btn {
+  font-size:24px;
+  margin-right:15px;
+  cursor:pointer;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  position:fixed;
+  left:-260px;
+  top:0;
+  width:260px;
+  height:100%;
+  background:#1565c0;
+  color:white;
+  transition:0.3s;
+  padding-top:60px;
+}
+
+.sidebar a {
+  display:block;
+  padding:15px 20px;
+  color:white;
+  text-decoration:none;
+  font-size:18px;
+}
+
+.sidebar a:hover {
+  background:#0d47a1;
+}
+
+/* ===== CONTENT ===== */
+.content {
+  padding:20px;
+}
+
+/* FIX CHỮ SÁT MÉP */
+.page {
+  padding:10px 5px;
+  line-height:1.6;
+}
+
+/* ===== BANNER ===== */
+.banner {
+  background:linear-gradient(120deg,#1976d2,#42a5f5);
+  color:white;
+  padding:40px 20px;
+  border-radius:10px;
+  margin-bottom:20px;
+}
+
+.banner h1 {
+  margin:0;
+}
+
+/* ===== BOX NGÀNH ===== */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+}
+
+.card {
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-top:0;
+  color:#1976d2;
+}
+
+/* ===== LIST ĐẸP HƠN ===== */
+ul {
+  padding-left:20px;
+}
+
+li {
+  margin-bottom:6px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  margin-top:30px;
+  padding:20px;
+  background:#1976d2;
+  color:white;
+  text-align:center;
+  border-radius:8px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div id="menu" class="sidebar">
+  <a href="#" onclick="showPage('home')">Trang chủ</a>
+  <a href="#" onclick="showPage('gioithieu')">Giới thiệu</a>
+  <a href="#" onclick="showPage('lienhe')">Liên hệ</a>
+</div>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <span class="menu-btn" onclick="toggleMenu()">☰</span>
+  Tuyển sinh đại học 2026
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+  <!-- TRANG CHỦ -->
+  <div id="home" class="page">
+    <div class="banner">
+      <h1>Chào mừng đến với cổng tư vấn tuyển sinh 2026</h1>
+      <p>Tra cứu ngành học • Phương thức xét tuyển • Thông tin trường</p>
+    </div>
+
+    <h2>Ngành đào tạo nổi bật</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Công nghệ thông tin</h3>
+        <p>Lập trình, AI, dữ liệu, phát triển phần mềm.</p>
+      </div>
+
+      <div class="card">
+        <h3>Quản trị kinh doanh</h3>
+        <p>Marketing, quản lý, khởi nghiệp, tài chính.</p>
+      </div>
+
+      <div class="card">
+        <h3>Dược học</h3>
+        <p>Bào chế thuốc, kiểm nghiệm, nhà thuốc.</p>
+      </div>
+
+      <div class="card">
+        <h3>Ngôn ngữ Anh</h3>
+        <p>Biên phiên dịch, du lịch, giảng dạy.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- GIỚI THIỆU -->
+  <div id="gioithieu" class="page" style="display:none">
+    <h2>Giới thiệu tuyển sinh đại học 2026</h2>
+
+    <p>
+      Cổng thông tin tuyển sinh đại học 2026 cung cấp đầy đủ thông tin về ngành đào tạo,
+      phương thức xét tuyển, chỉ tiêu và cơ hội nghề nghiệp cho thí sinh trên toàn quốc.
+      Website giúp học sinh lựa chọn ngành học phù hợp với năng lực và định hướng tương lai.
+    </p>
+
+    <h3>Mục tiêu đào tạo</h3>
+    <ul>
+      <li>Đào tạo nguồn nhân lực chất lượng cao</li>
+      <li>Kết hợp lý thuyết với thực hành thực tế</li>
+      <li>Phát triển kỹ năng nghề nghiệp và ngoại ngữ</li>
+      <li>Đáp ứng nhu cầu doanh nghiệp và xã hội</li>
+    </ul>
+
+    <h3>Các ngành đào tạo</h3>
+    <ul>
+      <li><b>Công nghệ thông tin:</b> Lập trình phần mềm, trí tuệ nhân tạo, dữ liệu lớn</li>
+      <li><b>Dược học:</b> Sản xuất, kiểm nghiệm và kinh doanh dược phẩm</li>
+      <li><b>Điều dưỡng:</b> Chăm sóc sức khỏe và hỗ trợ điều trị</li>
+      <li><b>Quản trị kinh doanh:</b> Quản lý, marketing, khởi nghiệp</li>
+      <li><b>Kế toán:</b> Tài chính, kiểm toán, kế toán doanh nghiệp</li>
+      <li><b>Marketing:</b> Truyền thông, thương hiệu, digital marketing</li>
+      <li><b>Ngôn ngữ Anh:</b> Biên phiên dịch, du lịch, giảng dạy</li>
+      <li><b>Luật:</b> Luật kinh tế, pháp lý doanh nghiệp</li>
+    </ul>
+
+    <h3>Phương thức tuyển sinh</h3>
+    <ul>
+      <li>Xét điểm thi tốt nghiệp THPT</li>
+      <li>Xét học bạ THPT</li>
+      <li>Xét kết quả đánh giá năng lực</li>
+      <li>Tuyển thẳng theo quy định</li>
+    </ul>
+
+    <h3>Cơ hội nghề nghiệp</h3>
+    <ul>
+      <li>Làm việc tại doanh nghiệp, bệnh viện, công ty công nghệ</li>
+      <li>Cơ hội việc làm rộng mở trong và ngoài nước</li>
+      <li>Thu nhập ổn định và phát triển lâu dài</li>
+      <li>Có thể học lên thạc sĩ, tiến sĩ</li>
+    </ul>
+
+    <h3>Đối tượng tuyển sinh</h3>
+    <p>
+      Thí sinh đã tốt nghiệp THPT hoặc tương đương trên toàn quốc,
+      có đủ sức khỏe và đáp ứng điều kiện tuyển sinh theo quy định.
+    </p>
+  </div>
+
+  <!-- LIÊN HỆ -->
+  <div id="lienhe" class="page" style="display:none">
+    <h2>Liên hệ tư vấn</h2>
+    <p>Hotline: 0372004540</p>
+    <p>Email: tuyensinh@daihoc.edu.vn</p>
+    <p>Địa chỉ: Tỉnh Khánh Hoà</p>
+  </div>
+
+  <div class="footer">
+    © 2026 Cổng thông tin tuyển sinh
+  </div>
+
+</div>
+
+<script>
+function toggleMenu(){
+  const menu=document.getElementById("menu");
+  if(menu.style.left==="0px"){
+    menu.style.left="-260px";
+  }else{
+    menu.style.left="0px";
+  }
+}
+
+function showPage(pageId){
+  document.querySelectorAll(".page").forEach(p=>p.style.display="none");
+  document.getElementById(pageId).style.display="block";
+  toggleMenu();
+}
+</script>
+
+</body>
+</html>
